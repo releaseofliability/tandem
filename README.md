@@ -11,6 +11,7 @@
   <img alt="Client side" src="https://img.shields.io/badge/environment-client-5671C2?style=flat-square">
   <img alt="Java 25" src="https://img.shields.io/badge/Java-25-ED8B00?style=flat-square">
   <img alt="Author Exocutor" src="https://img.shields.io/badge/author-Exocutor-444444?style=flat-square">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-3DA639?style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -24,6 +25,8 @@ Tandem keeps several Minecraft players connected in one game instance. Join the 
 Press **Z** to cycle through connected players, or open a compact selector inspired by Minecraft's F3 + F4 menu. Each session keeps its own connection, world, inventory, position, dimension, game mode, experience, chat and HUD. Background sessions keep receiving updates while only the selected world is rendered.
 
 **Created by Exocutor.**
+
+Licensed under the [MIT License](LICENSE).
 
 ## Features
 

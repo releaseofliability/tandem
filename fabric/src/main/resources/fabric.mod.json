@@ -3,6 +3,7 @@
   "id": "tandem",
   "version": "${version}",
   "name": "Tandem",
+  "license": "MIT",
   "authors": ["Exocutor"],
   "icon": "assets/tandem/icon.png",
   "description": "Keep multiple players connected and switch control between them. Sponsored by CTF Launcher: https://launcher.ctf.mom",

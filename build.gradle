@@ -12,6 +12,9 @@ subprojects {
         sourceSets.main.java.srcDir rootProject.file('common/src/main/java')
         sourceSets.main.resources.srcDir rootProject.file('common/src/main/resources')
         tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 25 }
-        tasks.withType(Jar).configureEach { includeEmptyDirs = false }
+        tasks.withType(Jar).configureEach {
+            includeEmptyDirs = false
+            from(rootProject.file('LICENSE'))
+        }
     }
 }
