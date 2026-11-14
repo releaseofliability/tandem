@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "tandem",
+  "version": "${version}",
+  "name": "Tandem",
+  "authors": ["Exocutor"],
+  "icon": "assets/tandem/icon.png",
+  "description": "Keep multiple players connected and switch control between them. Sponsored by CTF Launcher: https://launcher.ctf.mom",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.exocutor.tandem.fabric.TandemFabric"
+    ],
+    "modmenu": [
+      "dev.exocutor.tandem.fabric.TandemModMenu"
+    ]
+  },
+  "mixins": [
+    "tandem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "ias": "*"
+  }
+}

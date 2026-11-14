@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+[[mods]]
+modId = "tandem"
+version = "${version}"
+displayName = "Tandem"
+authors = "Exocutor"
+logoFile = "assets/tandem/icon.png"
+description = "Keep multiple players connected and switch control between them."
+credits = "Sponsored by CTF Launcher — https://launcher.ctf.mom"
+[[mixins]]
+config = "tandem.mixins.json"
+[[dependencies.tandem]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.3.0.103,)"
+ordering = "NONE"
+side = "CLIENT"
+[[dependencies.tandem]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.3]"
+ordering = "NONE"
+side = "CLIENT"

@@ -1,0 +1,13 @@
+plugins { id 'net.fabricmc.fabric-loom' version '1.17.21' }
+base { archivesName = 'tandem-fabric' }
+dependencies {
+    minecraft 'com.mojang:minecraft:26.3'
+    implementation 'net.fabricmc:fabric-loader:0.20.1'
+    implementation 'net.fabricmc.fabric-api:fabric-api:0.166.2+26.3'
+    compileOnly 'com.terraformersmc:modmenu:18.0.0'
+}
+processResources { filesMatching('fabric.mod.json') { expand version: project.version } }
+loom {
+    mods { tandem { sourceSet sourceSets.main } }
+    runs { client { client(); runDir 'run' } }
+}

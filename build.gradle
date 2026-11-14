@@ -1,0 +1,17 @@
+allprojects {
+    group = 'dev.exocutor.tandem'
+    version = '0.2.1+26.3'
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.terraformersmc.com/releases/' }
+    }
+}
+subprojects {
+    afterEvaluate {
+        java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+        sourceSets.main.java.srcDir rootProject.file('common/src/main/java')
+        sourceSets.main.resources.srcDir rootProject.file('common/src/main/resources')
+        tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 25 }
+        tasks.withType(Jar).configureEach { includeEmptyDirs = false }
+    }
+}

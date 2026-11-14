@@ -1,0 +1,8 @@
+plugins { id 'java-library'; id 'net.neoforged.moddev' version '2.0.148' }
+base { archivesName = 'tandem-neoforge' }
+neoForge {
+    version = '26.3.0.103'
+    runs { client { client(); gameDirectory = project.file('run') } }
+    mods { tandem { sourceSet sourceSets.main } }
+}
+processResources { filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version } }
